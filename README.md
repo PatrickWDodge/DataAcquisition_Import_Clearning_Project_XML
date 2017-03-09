@@ -1,3 +1,8 @@
 # Springboard_5.3XML
 
-Regarding the XML exercise portion (beginning In[5])
+Regarding the XML exercise portion (beginning In[5]):
+The first two challenges are answered by creating a single dataframe that houses every country and its population as well as its infant mortality rate. The dataframe is created by creating a dictionary with this schema {country name: [population, infant mortality rate]}. The dictionary is then turned into a dataframe using the pandas from_dict() method with the orientation set to 'index.'
+
+The third challenge requires finding the percentage breakdown of ethnic groups within each country. Those percentages are added to the dataframe created above, then multiplied by the population to achieve the population of each ethnic group in each country. The ethnic group columns are then summed and the totals are added to a new dataframe. That dataframe is then sorted to determine the top 10 most populous ethnic groups. 
+
+The fourth challenge is comprised of 3 fetch-quests. As such, I found it easiest to create a function that searches for the required information and returns it (I appropriately named it google). The function takes two arguments (the item, and its search characteristic). So, if you want to find the longest river, you type google('river', 'length'). Internally, the function starts with a process similar to that of the first two challenges. Once that dataframe is created (with perhaps rivers as the indices and lenght as the column), it is then shorted and the top item is used to complete the process. The remainder of the process involves finding the countries associated with said item, and printing them. 
